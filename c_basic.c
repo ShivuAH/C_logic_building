@@ -44,18 +44,18 @@ int main ()
     // else
     // printf("No");
 
-    int marks;
-    scanf("%d",&marks);
-    if(marks>=0 && marks<=43)
-    printf("Ur Pail");
-    else if(marks>=35 && marks<=60)
-    printf("Ur B grade");
-    else if(marks>=61 && marks<=90)
-    printf("Ur A Grade");
-    else if(marks>=91 && marks<=100)
-    printf("Ur Passed with Distinction");
-    else
-    printf("Invalid marks");
+    // int marks;
+    // scanf("%d",&marks);
+    // if(marks>=0 && marks<=43)
+    // printf("Ur Pail");
+    // else if(marks>=35 && marks<=60)
+    // printf("Ur B grade");
+    // else if(marks>=61 && marks<=90)
+    // printf("Ur A Grade");
+    // else if(marks>=91 && marks<=100)
+    // printf("Ur Passed with Distinction");
+    // else
+    // printf("Invalid marks");
 
 
 return 0;
