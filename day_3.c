@@ -126,20 +126,23 @@ int main(){
 //     printf("Not perfect number");
 // }
 
-int n,m;
-scanf("%d%d",&n,&m);
+// int n,m;
+// scanf("%d%d",&n,&m);
 
-for(int j=n;j<=m;j++){
-    int sum=0;
-for(int i=1;i<=j;i++){
-    if(j%i==0){
-       sum+=i; 
-    }
-}
-if(sum/2==j){
-    printf("%d\n",j);
-}
-}
+// for(int j=n;j<=m;j++){
+//     int sum=0;
+// for(int i=1;i<=j;i++){
+//     if(j%i==0){
+//        sum+=i; 
+//     }
+// }
+// if(sum/2==j){
+//     printf("%d\n",j);
+// }
+// }
+
+
+printf("ffff");
 
 
 return 0;
