@@ -20,22 +20,42 @@
 
 
 //Reverse of the number using function
-#include<stdio.h>
-int reverse(int n);
-int main(){
-    int n;
-    scanf("%d",&n);
-    int c=reverse(n);
-    printf("Reverse number: %d\n",c);
-    return 0;
-}
-int reverse(int n){
-    int reverse=0;
-    while(n>0){
-    reverse=reverse*10+n%10;
-    n=n/10;
-    }
-    return reverse;    
-}
+// #include<stdio.h>
+// int reverse(int n);
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int c=reverse(n);
+//     printf("Reverse number: %d\n",c);
+//     return 0;
+// }
+// int reverse(int n){
+//     int reverse=0;
+//     while(n>0){
+//     reverse=reverse*10+n%10;
+//     n=n/10;
+//     }
+//     return reverse;    
+// }
 //output:123
 //Reverse number: 321
+
+
+//Function calling and control example
+
+#include<stdio.h>
+void divya(void);
+void ramya(void);
+int main(){
+    printf("Rahul is in his home\n");
+    divya();
+    printf("Rahul is back to his home\n");
+}
+void ramya(){
+    printf("He had tea with Ramya\n");
+}
+void divya(){
+    printf("Divya is preparing coffe\n");
+    ramya();
+    printf("He had coffe with Divya\n");
+}
