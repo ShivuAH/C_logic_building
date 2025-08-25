@@ -141,28 +141,55 @@
 // }
 
 
+// #include<stdio.h>
+// int main(){ 
+//     int a[]={121,4334,656};
+//     int s=sizeof(a)/sizeof(a[0]);
+// for(int i=0;i<s;i++){
+//     int temp=a[i];
+//     int reverse=0;
+
+// while (a[i]>0)
+// {
+//     reverse=reverse*10+a[i]%10;
+//     a[i]=a[i]/10;
+// }
+
+// if(reverse==temp){
+// printf("The %d is palindrome \n",temp);
+
+// }else{
+//     printf("No\n");
+//     return 0;
+// }
+// }
+// printf("Yes\n");
+// return 0;
+// }
+
+
+
 #include<stdio.h>
 int main(){ 
-    int a[]={121,4334,656};
+    int a[]={121,4334,123,656};
     int s=sizeof(a)/sizeof(a[0]);
+    int flag=1;
 for(int i=0;i<s;i++){
     int temp=a[i];
     int reverse=0;
 
-while (a[i]>0)
+while (temp>0)
 {
-    reverse=reverse*10+a[i]%10;
-    a[i]=a[i]/10;
+    reverse=reverse*10+temp%10;
+    temp=temp/10;
 }
 
-if(reverse==temp){
-printf("The %d is palindrome \n",temp);
+if(reverse!=a[i]){
+    flag=0;
+    break;
 
-}else{
-    printf("No\n");
-    return 0;
 }
 }
-printf("Yes\n");
+printf("%d\n",flag);
 return 0;
 }
